@@ -711,7 +711,7 @@ function EmissorPage() {
 
   // Ambiente: 'homologacao' para testes, 'producao' para emissão real
   // Troque para 'producao' somente após validar todos os testes
-  const AMBIENTE = 'homologacao';
+  const AMBIENTE = 'producao';
 
   const emitir = async () => {
     setShowEmitModal(false);
