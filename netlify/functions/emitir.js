@@ -21,9 +21,8 @@ exports.handler = async (event) => {
   }
 
   const { nota, ambiente } = body;
-  const base = ambiente === 'producao'
-    ? 'https://api.focusnfe.com.br'
-    : 'https://homologacao.focusnfe.com.br';
+  // Sempre usa produção
+  const base = 'https://api.focusnfe.com.br';
 
   // Monta payload Focus NFe NFS-e
   const payload = {
